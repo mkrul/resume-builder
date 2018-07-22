@@ -1,0 +1,27 @@
+#resume-header {
+  padding-right: 30px;
+}
+
+#resume-hr {
+  width: 60%;
+  float: left;
+}
+
+#resume-body {
+  margin: 30px;
+  font-family: tahoma;
+}
+
+.col {
+  float: left;
+  padding-right: 50px;
+  width: 25%;
+  word-wrap: break-word;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+  padding-bottom: 40px;
+}

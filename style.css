@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+#form-container {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+#form {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.header {
+  color: red;
+}
+
+#header-class {
+  font-family: Garamond;
+  font-style: italic;
+}
+
+#header-name, #header-title {
+  font-family: Tahoma;
+}
+
+hr {
+  width: 60%;
+}
+
+input {
+  width: 60%;
+}
+
+.user-input {
+  margin-bottom: 15px;
+}
+
+textarea {
+  font-family: Tahoma;
+  height: 5em;
+  resize: none;
+  width: 100%;
+}
+
+input[name="start"], input[name="end"] {
+  margin-bottom: 5px;
+  width: 130px;
+}
+
+.employer-container {
+  font-family: Tahoma;
+  font-size: .8em;
+}
+
+span[name="end-date"] {
+  float: right;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button {
+  width: 115px;
+}
+

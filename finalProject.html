@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="header" id="header-name">Misha Krul</h1>
+      <h2 class="header" id="header-class">Web 115 - Section 0001</h2>
+      <hr>
+      <h3 id="header-title">Build Your Resume</h2>
+    </div>
+    
+    <div class="container">
+      <div id="form-container">
+        <form id="form" onsubmit="return validate();">
+          
+          <input type="text" class="user-input" id="name" onfocus="removeBoxShadow('name')" placeholder="Enter your full name">
+          <input type="text" class="user-input" id="address" onfocus="removeBoxShadow('address')" placeholder="Enter your home address">
+          <input type="text" class="user-input" id="phone" onfocus="removeBoxShadow('phone')" placeholder="Enter your phone number">
+          <input type="text" class="user-input" id="email" onfocus="removeBoxShadow('email')"placeholder="Enter your e-mail address">
+          
+          <textarea id="personal" class="user-input" onfocus="removeBoxShadow('personal')" placeholder="Enter your personal information"></textarea>
+          <textarea id="objectives" class="user-input" onfocus="removeBoxShadow('objectives')" placeholder="Enter your career objectives"></textarea>
+          <textarea id="education" class="user-input" onfocus="removeBoxShadow('education')" placeholder="Enter your educational background"></textarea>
+          <textarea id="business" class="user-input" onfocus="removeBoxShadow('business')" placeholder="Enter your business references"></textarea>
+          
+          <div class="employer-container" id="emp-container-0" style="display: inline-block;">
+            <span name="start-date">Start Date: <input type="date" name="start" class="user-input" id="start0" onfocus="removeBoxShadow('start0')" ></span>
+            <span name="end-date">End Date: <input type="date" name="end" class="user-input" id="end0" onfocus="removeBoxShadow('end0')" ></span>
+            <textarea name="employer" id="emp0" class="user-input" placeholder="Enter your recent employment information" onfocus="removeBoxShadow('emp0')" ></textarea>
+          </div>
+          
+          <div class="employer-container" id="emp-container-1" style="display: none;">
+            <span name="start-date">Start Date: <input type="date" name="start" id="start1" onfocus="removeBoxShadow('start1')" ></span>
+            <span name="end-date">End Date: <input type="date" name="end" id="end1" onfocus="removeBoxShadow('end1')" ></span>
+            <textarea name="employer" id="emp1" placeholder="Enter your recent employment information" onfocus="removeBoxShadow('emp1')" ></textarea>
+          </div>
+
+          <div class="employer-container" id="emp-container-2" style="display: none;">
+            <span name="start-date">Start Date: <input type="date" name="start" id="start2" onfocus="removeBoxShadow('start2')" ></span>
+            <span name="end-date">End Date: <input type="date" name="end" id="end2" onfocus="removeBoxShadow('end2')" ></span>
+            <textarea name="employer" id="emp2" placeholder="Enter your recent employment information" onfocus="removeBoxShadow('emp2')" ></textarea>
+          </div>
+          
+          <div class="employer-container" id="emp-container-3" style="display: none;">
+            <span name="start-date">Start Date: <input type="date" name="start" id="start3" onfocus="removeBoxShadow('start3')" ></span>
+            <span name="end-date">End Date: <input type="date" name="end" id="end3" onfocus="removeBoxShadow('end3')" ></span>
+            <textarea name="employer" id="emp3" placeholder="Enter your recent employment information" onfocus="removeBoxShadow('emp3')" ></textarea>
+          </div>
+          
+          <div id="btn-container">
+            <input type="submit" id="submit" class="button" value="Create Resume">
+            <input type="reset" id="reset" class="button" value="Clear Form">
+            <input type="button" id="add-employer" class="button" value="Add Employer" onclick="showEmployer();">
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
